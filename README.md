@@ -1,7 +1,7 @@
-# Analisa-Data-Tagihan-Kesehatan
+# Analisa-Data-Tagihan-Asuransi-Kesehatan
 Pacmann Probability Project 
 ## I. Introduction
-Project analisa probabilitas ini bertujuan untuk analisa data suatu dataset yang mencakup Analisa Statistik Deskriptif, Analisa Variabel Diskrit, Analisa Variabel Kontinu, Analisa Korelasi Variabel serta Pengujian Hipotesis.
+Project analisa probabilitas ini bertujuan untuk analisa data suatu dataset yang mencakup Analisa Statistik Deskriptif, Analisa Variabel Diskrit, Analisa Variabel Kontinyu, Analisa Korelasi Variabel serta Pengujian Hipotesis.
 Dataset yang digunakan adalah dataset Tagihan Asuransi Kesehatan, dimana memiliki 7 variabel sebagai berikut:
 1)	Age (Age of primary beneficiary/ Penerima manfaat Asuransi utama)
 2)	Sex (Insurance contractor gender/ Jenis kelamin (female, male))
@@ -11,7 +11,7 @@ Dataset yang digunakan adalah dataset Tagihan Asuransi Kesehatan, dimana memilik
 6)	The Region (Benefiary's residential area in the US/ Tempat tinggal penerima manfaat di US, (northeast, southeast, southwest, northwest))
 7)	Charges (individual medical cost billed by health insurance/ Tagihan asuransi kesehatan individu)
 ## II. Research Question
-Pertanyaan-pertanyaan seputar data tagihan kesehatan  yang akan dijawab melalui analisa statistik - probabilitas pada project ini meliputi:
+Pertanyaan-pertanyaan seputar data tagihan Asuransi kesehatan yang akan dijawab melalui analisa statistik - probabilitas pada project ini meliputi:
 ### 2.1 Analisa Statistik Deskriptif
 #### a.   Berapa rata rata umur pada data tersebut?
 Menghitung rata-rata umur pada program python menggunakan fungsi mean() dari library pandas (lihat di file jupiter notebook).  
@@ -62,21 +62,21 @@ Membuat visualisasi (plot) bar chart proporsi data perokok dan non perokok mengg
 
 Kesimpulan: Berdasarkan hasil perhitungan dan bar chart proporsi perokok dan non-perokok diatas, dapat dinyatakan bahwa proporsi seseorang adalah Non-Perokok lebih besar dibandingkan dengan perokok.  
 #### d.   Berapa peluang seseorang tersebut adalah perempuan diketahui dia adalah perokok?
-Menghitung peluang seseorang adalah perempuan jika diketahui merokok menggunakan library pandas: (Lihat file jupiter notebok).
+Menghitung peluang seseorang adalah perempuan jika diketahui merokok menggunakan library pandas: (Lihat file jupiter notebok).  
 ![gbr 12 peluang perempuan dan perokok 2](https://github.com/indra2878/Analisa-Data-Tagihan-Kesehatan/assets/129472057/01093eea-9754-4802-942a-d10a8fd009a4)  
 Kesimpulan: peluang seseorang itu adalah perempuan jika diketahui perokok adalah sebesar 0,42.  
 #### e.   Berapa peluang seseorang tersebut adalah laki-laki diketahui dia adalah perokok?
-Menghitung peluang seseorang adalah laki-laki jika diketahui merokok (Lihat file jupiter notebok).
+Menghitung peluang seseorang adalah laki-laki jika diketahui merokok (Lihat file jupiter notebok).  
 ![gbr 13 peluang laki-laki dan perokok 2](https://github.com/indra2878/Analisa-Data-Tagihan-Kesehatan/assets/129472057/ca1fab4e-e90c-4367-89bc-496c73214e0c)  
 Kesimpulan: peluang seseorang itu adalah laki-laki jika diketahui perokok adalah sebesar 0,58.  
-### 2.3 Analisa Variabel Kontinu
+### 2.3 Analisa Variabel kontinyu
 #### a.   Mana yang lebih mungkin terjadi
 - Seseorang dengan BMI diatas 25 mendapatkan tagihan kesehatan diatas 16.7k, atau
 - Seseorang dengan BMI dibawah 25 mendapatkan tagihan kesehatan diatas 16.7k
-Menghitung probabilitas kedua data diatas menggunakan library pandas:(Lihat file jupiter notebok).
-![gbr 14 peluang tagihan 167k 2](https://github.com/indra2878/Analisa-Data-Tagihan-Kesehatan/assets/129472057/9dcd7291-63b0-4133-95a3-8e6a5a4f9dcf)
-Membuat visualisasi (plot) bar chart proporsi data tagihan kesehatan diatas 16.7K seseorang dengan BMI diatas 25 vs seseorang dengan BMI dibawah 25 menggunakan matplotlib:
-![gbr 15 bar plot peluang tagihan 167k bmi 25](https://github.com/indra2878/Analisa-Data-Tagihan-Kesehatan/assets/129472057/09747041-e9f7-4b11-9f07-0334655a98fe)
+Menghitung probabilitas kedua data diatas menggunakan library pandas:(Lihat file jupiter notebok).  
+![gbr 14 peluang tagihan 167k 2](https://github.com/indra2878/Analisa-Data-Tagihan-Kesehatan/assets/129472057/9dcd7291-63b0-4133-95a3-8e6a5a4f9dcf)  
+Membuat visualisasi (plot) bar chart proporsi data tagihan kesehatan diatas 16.7K seseorang dengan BMI diatas 25 vs seseorang dengan BMI dibawah 25 menggunakan matplotlib:  
+![gbr 15 bar plot peluang tagihan 167k bmi 25](https://github.com/indra2878/Analisa-Data-Tagihan-Kesehatan/assets/129472057/09747041-e9f7-4b11-9f07-0334655a98fe)   
 Kesimpulan: dari perhitungan dan bar plot diatas dapat disimpulkan bahwa seseorang dengan BMI diatas 25 berpeluang lebih tinggi untuk mendapatkan tagihan kesehatan diatas 16,7 K dibandingkan dengan sesorang dengan BMI dibawah 25.
 
 
@@ -157,7 +157,7 @@ Dari perhitungan diatas terlihat bahwa proporsi perokok laki-laki cenderung lebi
 Agar lebih meyakinkan maka perlu diuji kesamaan proporsi 2 populasi melalui uji z-score.  
 
 **Menghitung Statistik Uji, Uji Z-score:**
-Menghitung z-score dn p_-value menggunakan fungsi proportions_ztest() dari modul statsmodels: (lihat file jupiter notebook).
+Menghitung z-score dn p_-value menggunakan fungsi proportions_ztest() dari modul statsmodels: (lihat file jupiter notebook).  
 ![gbr 28  menghitung uji z proporsi perokok laki-laki   perempuan 2](https://github.com/indra2878/Analisa-Data-Tagihan-Kesehatan/assets/129472057/487fc3a7-4eb0-471e-8cd9-64c4c63e716d)  
 
 **Menentukan aturan keputusan:**  
@@ -186,18 +186,18 @@ Dari perhitungan didapatkan nilai uji-f adalah 3.707884538770159 dan nilai p-val
 Kesimpulan: hasil uji hipotesis menyatakan null hypothesis ditolak, maka dapat disimpulkan bahwa ada cukup bukti bahwa variansi tagihan perokok lebih tinggi dibandingkan dengan non perokok.  
 
 ## III. Conclusion  
-Berdasarkan hasil analisa dataset tagihan kesehatan diatas ada beberapa temuan yang menarik yaitu:  
+Berdasarkan hasil analisa dataset tagihan asuransi kesehatan diatas ada beberapa temuan yang menarik yaitu:  
 1.	Tagihan kesehatan perokok cenderung lebih tinggi daripada tagihan kesehatan non perokok sehingga disarankan kepada perusahaan asuransi kesehatan untuk menambah premi asuransi kesehatan bila diketahui seseorang itu perokok baik itu laki-laki maupun perempuan.
 2.	Tagihan kesehatan mempunyai korelasi lemah positif dengan umur seseorang sehingga disarankan kepada perusahaan asuransi kesehatan untuk menambah premi asuransi kesehatan seiring bertambahnya umur seseorang.
 3.	Tagihan kesehatan mempunyai korelasi lemah positif dengan BMI seseorang sehingga disarankan kepada perusahaan asuransi kesehatan untuk menambah premi asuransi kesehatan seiring bertambahnya BMI seseorang.
 
 ## IV. Further Research
-Analisa Data Tagihan Kesehatan ini terbuka untuk diperbaiki dari segi pengolahan data, coding yang lebih baik dari segi kecepatan prosesnya, visualisasi plot yang lebih baik, dan sebagainya.  
+Analisa Data Tagihan Asuransi Kesehatan ini masih banyak kekurangannya sehngga terbuka bagi pembaca untuk memperbaiki dari segi pengolahan data, coding yang lebih baik dari segi kecepatan prosesnya, visualisasi plot yang lebih baik, dan sebagainya.  
 
-## V Reference
+## V. Reference
 https://www.stat.cmu.edu/capstoneresearch/315files_s23/team12.html
 
-VI Data Processing report link
+## VI. Data Processing report link
 https://medium.com/@i.wahyudin2878/analisa-data-tagihan-asuransi-kesehatan-feccf57f59d
 
 
